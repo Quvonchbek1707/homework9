@@ -1,4 +1,9 @@
-let arr = JSON.parse(prompt("Array bering:"));
+let str = prompt("Array bering: ")
+let arr = str
+    .replace("[", "")
+    .replace("]", "")
+    .split(",")
+    .map(s => s.trim().toLowerCase() === "true");
 function countTrue(arr){
     let result = 0;
        arr.forEach(el => {
