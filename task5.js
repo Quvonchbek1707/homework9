@@ -1,9 +1,5 @@
-let str = prompt("Array bering: ")
-let arr = str
-    .replace("[", "")
-    .replace("]", "")
-    .split(",")
-    .map(num => Number(num.trim()));
+let arr = JSON.parse(prompt("Array bering:"));
+
 function func(arr){
     let val = arr[0]
     let tal = arr[1]
