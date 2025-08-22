@@ -1,9 +1,5 @@
-let str = prompt("Array bering: ");
-let arr = str
-    .replace("[", "")
-    .replace("]", "")
-    .split(",")
-    .map(num => Number(num.trim()));
+let arr = JSON.parse(prompt("Array bering:"));
+
 
 function formatPhoneNumber(arr) {
     if (arr.length !== 10 || arr.some(isNaN)) {
