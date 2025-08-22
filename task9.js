@@ -1,5 +1,9 @@
-let arr = JSON.parse(prompt("Array bering:"));
-
+let str = prompt("Array bering: ")
+let arr = str
+    .replace("[", "")
+    .replace("]", "")
+    .split(",")
+    .map(num => String(num.trim()));
 function chatRoomStatus(arr){
     if(arr.length===0){
         console.log("onlayn hech kim")
@@ -18,3 +22,4 @@ function chatRoomStatus(arr){
     }
 }
 chatRoomStatus(arr)
+
