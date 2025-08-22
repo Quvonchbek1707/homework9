@@ -1,9 +1,5 @@
-let str = prompt("Array bering: ")
-let arr = str
-    .replace("[", "")
-    .replace("]", "")
-    .split(",")
-    .map(num => Number(num.trim()));
+let arr = JSON.parse(prompt("Array bering:"));
+
 function findPrimeNumber(arr){
     for(let i =0; i<arr.length; i++){
         let val = arr[i]
