@@ -1,9 +1,5 @@
-let str = prompt("Array bering: ")
-let arr = str
-    .replace("[", "")
-    .replace("]", "")
-    .split(",")
-    .map(num => String(num.trim()));
+let arr = JSON.parse(prompt("Array bering:"));
+
 function returnVowel(arr){
     let ans = []
     for(let i = 0; i<arr.length; i++){
